@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo"
+        >Seguro No Pagamos Cooperativa<span
+          class="animate"
+          styles="--i:1;"></span
+      ></a>
+      <div class="bx bx-menu" id="menu-icon">
+        <span class="animate" styles="--i:2;"></span>
+      </div>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#insurance">Seguros</a>
+        <a href="#accidents">Siniestros</a>
+        <a href="#contact">Contacto</a>
+        <span class="active-nav"></span>
+        <span class="animate" styles="--i:2;"></span>
+      </nav>
+    </header>
+
+    <!-- sección de home -->
+    <section class="home show-animate home-content" id="home">
+      <div class="home-sci">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <span class="animate" styles="--i:6;"></span>
+      </div>
+    </section>
+
+    <!-- sección de seguros -->
+    <section class="insurance" id="insurance">
+      <h2 class="heading">
+        Seguros<span class="animate scroll" styles="--i:1;"></span>
+      </h2>
+      <div class="seguros-img">
+        <span class="animate scroll" styles="--i:2;"></span>
+      </div>
+    </section>
+
+    <!-- sección de simiestros -->
+    <section class="accidents" id="accidents">
+      <h2 class="heading">
+        Siniestros<span class="animate scroll" styles="--i:1;"></span>
+      </h2>
+    </section>
+
+    <!-- sección de contacto -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h1>Solicitud de Contacto</h1>
+        <form action="#" method="post">
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre:"
+            required />
+
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Apellido:"
+            required />
+
+          <input type="text" id="dni" name="dni" placeholder="DNI:" required />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email:"
+            required />
+
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Teléfono:"
+            required />
+
+          <select id="tipo-seguro" name="tipo-seguro">
+            <option value="Basico">Básico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Premium">Premium</option>
+          </select>
+
+          <p id="valor-seguro"></p>
+
+          <button type="submit">Solicitar Contacto</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Walter SEGURADO │ All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
